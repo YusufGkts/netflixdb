@@ -1,0 +1,49 @@
+.card-container {
+  border-bottom: solid 2px #282b30;
+  padding: 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .pic-title {
+    align-items: center;
+    display: flex;
+    .card-image {
+      border-radius: 5px;
+      width: 5px;
+      height: 6rem;
+      img {
+        width: 5rem;
+        height: 6rem;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      }
+    }
+
+    .card-title {
+      margin-left: 6rem;
+      .movie-content {
+        margin-top: 2.5rem;
+        .movie-title {
+          font-size: 18px;
+          display: flex;
+          .movie-date {
+            display: flex;
+            margin-left: 0.5rem;
+            align-items: center;
+            font-size: 13px;
+            color: #6e6d69;
+          }
+        }
+        .movie-information {
+          font-size: 13px;
+          color: #6e6d69;
+        }
+        .card-rate {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
