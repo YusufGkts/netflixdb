@@ -1,17 +1,3 @@
-:host {
-  mat-tab-group {
-    ng:deep {
-      .mat-tab-header {
-        .mat-tab-label-container {
-          .mat-tab-list {
-            .mat-tab-labels {
-              .mat-tab-label-content {
-                color: red;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+::ng-deep .mat-ink-bar {
+  background-color: #ed0000;
 }

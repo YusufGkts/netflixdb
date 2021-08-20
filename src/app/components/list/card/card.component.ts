@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { StarRatingComponent } from 'ng-starrating';
 
 @Component({
   selector: 'card',

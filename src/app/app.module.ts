@@ -12,7 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
-
+import { DetailComponent } from './components/detail/detail.component';
+import { MainComponent } from './components/main/main.component';
+import { MovieService } from './services/movies.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
+    DetailComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatTabsModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

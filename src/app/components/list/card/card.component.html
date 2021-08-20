@@ -1,4 +1,8 @@
-<div class="card-container">
+<div
+  [routerLink]="['/detail']"
+  routerLinkActive="router-link-active"
+  class="card-container"
+>
   <div class="pic-title">
     <div class="card-image">
       <img [src]="movie.img" alt="" />
@@ -6,7 +10,9 @@
     <div class="card-title">
       <div class="movie-content">
         <div class="movie-title">
+          {{ movie.id }}-
           {{ movie.name }}
+
           <div class="movie-date">{{ movie.date }}</div>
         </div>
         <div class="movie-information">{{ movie.director }}</div>
@@ -17,25 +23,3 @@
     </div>
   </div>
 </div>
-<!-- 
-<div class="card-container">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <div class="pic-title">
-          <div class="card-image">
-            <img [src]="movie.img" alt="" />
-          </div>
-          <div class="card-title">{{ movie.name }} {{ movie.date }}</div>
-        </div>
-      </mat-panel-title>
-      <mat-panel-description>
-        <div class="card-rate">{{ movie.rate }}</div>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <div class="card-information">
-      <p>{{ movie.stars }}</p>
-      <p>{{ movie.kind }}</p>
-    </div>
-  </mat-expansion-panel>
-</div> -->
