@@ -6,10 +6,15 @@ import { MovieService } from 'src/app/services/movies.service';
   styleUrls: ['detail.component.scss'],
 })
 export class DetailComponent implements OnInit {
-  details: any;
-  constructor(private moviedetails: MovieService) {}
+  movieDetail: any;
+
+  constructor(private detailService: MovieService) {}
 
   ngOnInit() {
-    this.details = this.moviedetails.movies;
+    this.detailService.movies.filter((m: any) => {
+      if (m.id == 2) {
+        this.movieDetail = m;
+      }
+    });
   }
 }

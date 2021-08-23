@@ -13,9 +13,10 @@ export class MovieService {
         name: 'Shawshank Redemption ',
         director: 'Neil Armstrong',
         stars: 'Morgan Freeman,Tim Robbins',
-        kind: 'Dram/Gerçek Hikaye',
+        type: 'Dram/Gerçek Hikaye',
         rate: 9.2,
         date: '(1994)',
+        length: '2h11m',
         img: './../../../../assets/img/shaw.jpg',
       },
       {
@@ -23,9 +24,10 @@ export class MovieService {
         name: 'God Father ',
         director: 'Neil Armstrong',
         stars: 'Morgan Freeman,Tim Robbins',
-        kind: 'Dram/Gerçek Hikaye',
+        type: 'Dram/Gerçek Hikaye',
         rate: 9.1,
         date: '(1976)',
+        length: '2h11m',
         img: './../../../../assets/img/god.jpg',
       },
     ];
