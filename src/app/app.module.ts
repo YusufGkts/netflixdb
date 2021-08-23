@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { DetailComponent } from './components/detail/detail.component';
 import { MainComponent } from './components/main/main.component';
 import { MovieService } from './services/movies.service';
+import { ratingStarsComponent } from './components/rating-stars/rating-star.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { MovieService } from './services/movies.service';
     NavbarComponent,
     DetailComponent,
     MainComponent,
+    ratingStarsComponent,
   ],
   imports: [
     BrowserModule,

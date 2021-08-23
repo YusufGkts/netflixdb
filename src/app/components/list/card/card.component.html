@@ -1,8 +1,4 @@
-<div
-  [routerLink]="['/detail']"
-  routerLinkActive="router-link-active"
-  class="card-container"
->
+<div (click)="onClick()" class="card-container">
   <div class="pic-title">
     <div class="card-image">
       <img [src]="movie.img" alt="" />

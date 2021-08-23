@@ -1,4 +1,12 @@
 <div class="detail-container">
+  <div class="back-button">
+    <img
+      (click)="onClick()"
+      class="button"
+      src=".//../../../assets/icon/backarrow.svg"
+      alt=""
+    />
+  </div>
   <div class="movie-image">
     <img [src]="movieDetail.img" alt="" />
   </div>
@@ -7,10 +15,36 @@
       {{ movieDetail.name }}
       <div class="movie-date">{{ movieDetail.date }}</div>
     </div>
-    <div class="movie-rate">{{ movieDetail.rate }}</div>
-    <div class="movie-lenght">{{ movieDetail.movie.lenght }}</div>
-    <div class="movie-type">{{ movieDetail.type }}</div>
+    <div class="movie-information">
+      <div class="movie-rate">Stars will come! {{ movieDetail.rate }}</div>
+      <div class="movie-lenght">{{ movieDetail.length }}</div>
+      <div class="type-container">
+        <div class="movie-type">{{ movieDetail.type }}</div>
+      </div>
+    </div>
+    <div class="movie-describtion">
+      <div class="describtion-title">Describtion</div>
+      <div class="text-underline"></div>
+      <div class="realese">
+        Initial release:
+        <div class="release-content">{{ movieDetail.release }}</div>
+      </div>
+      <div class="director">
+        Director:
+        <div class="director-content">{{ movieDetail.director }}</div>
+      </div>
+      <div class="writer">
+        Writers:
+        <div class="writer-content">{{ movieDetail.writers }}</div>
+      </div>
+    </div>
+    <div class="movie-cast">
+      Cast and Crew
+      <div class="text-underline-2"></div>
+      <div class="cast-icons">
+        <img [src]="movieDetail.actorsIcon" alt="" />
+        <div class="cast-name">{{ movieDetail.actors }}</div>
+      </div>
+    </div>
   </div>
-  <div class="movie-describtion">Describtion</div>
-  <div class="movie-cast">Cast and Crew</div>
 </div>

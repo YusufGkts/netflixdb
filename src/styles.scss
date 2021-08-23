@@ -2,5 +2,9 @@
 * {
   background-color: #0b0b01;
   color: #d0d1d5;
-  font-family: sans-serif;
+  font-family: "Product";
+}
+@font-face {
+  font-family: "Product";
+  src: local("Product"), url(./assets/fonts/Product.Sans.Bold.ttf);
 }
