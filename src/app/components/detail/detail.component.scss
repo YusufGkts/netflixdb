@@ -45,7 +45,12 @@
     }
     .movie-information {
       .movie-rate {
-        font-size: 10px;
+        display: flex;
+        align-items: center;
+        .rate-text {
+          margin-left: 0.3rem;
+          font-size: 11px;
+        }
       }
       .movie-lenght {
         color: #70706b;
@@ -53,6 +58,7 @@
       }
       .type-container {
         display: flex;
+        margin-top: 0.3rem;
         .movie-type {
           justify-content: center;
           align-items: center;
@@ -67,7 +73,7 @@
       }
     }
     .movie-describtion {
-      margin-top: 0.8rem;
+      margin-top: 0.6rem;
       .describtion-title {
         font-weight: 700;
         color: #fcf8f7;

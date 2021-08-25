@@ -8,8 +8,14 @@
     align-items: center;
     color: #e8e7e7;
   }
-
-  mat-icon {
-    margin-right: 2rem;
+  .search-box {
+    display: flex;
+    margin-right: 0.6rem;
+    .search-bar {
+      margin-right: 0.3rem;
+    }
+    mat-icon {
+      margin-right: 0.5rem;
+    }
   }
 }

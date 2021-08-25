@@ -14,8 +14,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { DetailComponent } from './components/detail/detail.component';
 import { MainComponent } from './components/main/main.component';
+
+//Service
 import { MovieService } from './services/movies.service';
-import { ratingStarsComponent } from './components/rating-stars/rating-star.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,7 @@ import { ratingStarsComponent } from './components/rating-stars/rating-star.comp
     NavbarComponent,
     DetailComponent,
     MainComponent,
-    ratingStarsComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { ratingStarsComponent } from './components/rating-stars/rating-star.comp
     BrowserAnimationsModule,
     MatTabsModule,
     MatIconModule,
+    RatingModule,
   ],
   providers: [MovieService],
   bootstrap: [AppComponent],

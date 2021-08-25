@@ -16,7 +16,10 @@
       <div class="movie-date">{{ movieDetail.date }}</div>
     </div>
     <div class="movie-information">
-      <div class="movie-rate">Stars will come! {{ movieDetail.rate }}</div>
+      <div class="movie-rate">
+        <rating [val]="movieDetail.rate"></rating>
+        <div class="rate-text">{{ movieDetail.rate }}</div>
+      </div>
       <div class="movie-lenght">{{ movieDetail.length }}</div>
       <div class="type-container">
         <div class="movie-type">{{ movieDetail.type }}</div>

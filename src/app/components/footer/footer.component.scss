@@ -1,0 +1,32 @@
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background-color: #6e6d69;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  .home-icon {
+    background: url(.//../../../assets/icon/home.svg);
+    width: 3rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+  }
+  .watch-list-icon {
+    background: url(./../../../assets/icon/watchlater.svg);
+    width: 3rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+  }
+  .profile-icon {
+    background: url(./../../../assets/icon/profile.svg);
+    width: 3rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+  }
+}

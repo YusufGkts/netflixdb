@@ -1,0 +1,15 @@
+<form action="">
+  <label for="">
+    <input type="text" (keyup)="searchTerm.next($event)" />
+    <small *ngIf="loading">Searching...</small>
+  </label>
+</form>
+<div class="list-group" *ngIf="searchResults">
+  <a
+    href="#"
+    class="list-group-item list-group-item-action"
+    *ngFor="let result of searchResults.results | slice: 0:9"
+  >
+    {{ result.name }}
+  </a>
+</div>

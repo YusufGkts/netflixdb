@@ -14,6 +14,9 @@
         <div class="movie-information">{{ movie.director }}</div>
         <div class="card-rate">
           {{ movie.rate }}
+          <div class="rating-stars">
+            <rating [val]="movie.rate"></rating>
+          </div>
         </div>
       </div>
     </div>
