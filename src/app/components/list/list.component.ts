@@ -6,10 +6,10 @@ import { MovieService } from 'src/app/services/movies.service';
   styleUrls: ['list.component.scss'],
 })
 export class ListComponent implements OnInit {
-  movies: any;
+  moviesList: any;
   constructor(private movieService: MovieService) {}
 
   ngOnInit() {
-    this.movies = this.movieService.movies;
+    this.moviesList = this.movieService.movies;
   }
 }

@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MovieService {
   movies: any;
-
+  searchKey: string;
+  filteredMovies: any;
   constructor() {
     this.movies = [
       {
@@ -39,5 +41,13 @@ export class MovieService {
         actors: 'Ömer Odabaş',
       },
     ];
+  }
+
+  makeSearch() {
+    this.filteredMovies = this.movies.filter((m: any) => {
+      return m.name.toLowerCase().includes(this.searchKey.toLowerCase());
+    });
+
+    console.log(this.filteredMovies);
   }
 }
